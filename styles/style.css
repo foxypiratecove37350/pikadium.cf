@@ -1,0 +1,144 @@
+@import url("./pikadium-go.css");
+
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+    scroll-behavior: smooth;
+}
+
+u-i-b {
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+html {
+    scrollbar-color: #12121280 #ebebeb80;
+    scrollbar-width: thin;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fefefe, #ebebeb);
+    font-family: "pikadium-go";
+}
+
+a, a:hover, a:active, a:visited {
+    color: inherit;
+    text-decoration: inherit;
+    font-family: inherit;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid #bebebe;
+    width: 100vw;
+    padding: 8px 0;
+    background: #ebebeb;
+    color: #121212;
+    z-index: 1000;
+}
+
+header::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 1px;
+    background: #bebebe;
+}
+
+header img {
+    height: 50px;
+}
+
+header > ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(1, 50px);
+    align-items: center;
+    justify-items: center;
+    font-weight: bolder;
+}
+
+header > ul > li {
+    display: inline-block;
+    list-style: none;
+}
+
+header > ul > li > a > button {
+    font-family: "pikadium-go";
+    color: #fefefe;
+    border-radius: 6px;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    background: #d30cc2;
+    padding: 0.6em 1.35em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: bolder;
+}
+
+header > ul > li > a > button:hover {
+    background: #a00793;
+}
+
+header > ul > li > a > button:active {
+    background: #7c0873;
+}
+
+.container {
+    margin-top: 67px;
+    padding: 35px 80px;
+    color: #121212;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 4.5rem;
+    margin-bottom: 5rem;
+}
+
+h1#logo {
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 17rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: max-content;
+    position: relative;
+}
+
+a[value="<"] {
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    left: -35px;
+    transform: translate(-100%, -50%);
+}
+
+a[value="P"] {
+    font-size: 16rem;
+    position: absolute;
+    top: 55%;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+a[value="STORE"] {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    font-style: italic;
+    transform: translate(-95%, 35%);
+}
+
+span {
+    transform: translateX(128px);
+}

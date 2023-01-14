@@ -1,0 +1,180 @@
+body {
+    background: linear-gradient(135deg, #d30cc2, #a00793, #7c0873);
+}
+
+.container {
+    background: transparent !important;
+    margin: 0;
+    padding-top: 102px;
+}
+
+.container h1 {
+    color: #ebebeb !important;
+}
+
+div#system > div[name=select] {
+    position: relative;
+    border: 5px solid #bebebe;
+    background: #ebebeb;
+    border-radius: 15px;
+    height: 50px;
+    width: 250px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+div#system.active > div[name=select] > img {
+    animation: spin 0.5s ease 1;
+    transform: rotate(180deg);
+    user-select: none;
+}
+
+div#system > div[name=select] > img {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: transparent;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+div#system > div[name=select]:active > img {
+    background: #2b2b2bb3;
+}
+
+div#system > div[name=select]:active {
+    background: #bebebe;
+    border-color: #2b2b2b;
+}
+
+div#system > div[name=select] > p {
+    width: 215px;
+    height: 50px;
+    font-size: 30px;
+    padding: 5px 10px;
+    font-weight: 550;
+    color: #121212;
+    border-radius: 15px;
+    cursor: pointer;
+    user-select: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+div#system.active > div[name=select] {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-width: 2.5px;
+    position: relative;
+}
+
+border {
+    opacity: 0;
+}
+
+div#system.active > div[name=select]:active > border {
+    opacity: 1;
+    display: block;
+    bottom: -5px;
+    position: absolute;
+    right: -5px;
+    width: calc(100% + 10px);
+    height: 5px;
+    background: #2b2b2b;
+}
+
+div#system > p[value] {
+    width: 250px;
+    height: 50px;
+    font-size: 30px;
+    padding: 5px 10px;
+    font-weight: 550;
+    color: #121212;
+    border: 5px solid #bebebe;
+    border-top-width: 2.5px;
+    background: #ebebeb;
+    border-radius: 0 0 15px 15px;
+    cursor: pointer;
+    user-select: none;
+}
+
+div#system > p[value]:active {
+    border-color: #2b2b2b;
+    background: #bebebe;
+}
+
+div#system > p[value=windows] {
+    border-radius: 0;
+    border-bottom-width: 2.5px;
+}
+
+div#system {
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+div#system.active {
+    overflow: visible;
+}
+
+div#downloadForm a {
+    color: red;
+    font-weight: 900;
+    font-size: 1.5rem;
+    cursor: not-allowed;
+    user-select: none;
+    position: absolute;
+    right: 50%;
+    bottom: 15px;
+    transform: translateX(50%);
+}
+
+div#downloadForm a[href] {
+    color: #00cc00;
+    cursor: pointer;
+    width: 220px;
+    height: 40px;
+}
+
+div#downloadForm a[href] img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+div#downloadForm {
+    position: relative;
+    margin: 0 auto;
+    width: 250px;
+    height: 225px;
+    margin-top: 50px;
+}
+
+div#downloadForm a[href]:hover {
+    text-decoration: underline;
+    text-decoration-color: #ebebeb;
+}
+
+img#system {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    border: 0;
+    outline: 0;
+    display: none;
+}

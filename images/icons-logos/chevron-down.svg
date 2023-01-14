@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="512" width="512">
+    <title>Chevron Down</title>
+    <path 
+        fill="none" 
+        stroke="#121212" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+        stroke-width="48" 
+        d="M112 184l144 144 144-144"
+     />
+</svg>
