@@ -1,0 +1,12 @@
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    html {
+        font-size: 50% !important;
+    }
+
+    header {
+        width: 20vw !important;
+        height: 100vh;
+        border-right: 1px solid #b1b1b1;
+        border-bottom: 0 !important;
+    }
+}

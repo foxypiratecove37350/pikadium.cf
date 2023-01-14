@@ -68,6 +68,14 @@
             document.querySelector("u-i-b").textContent = new URLSearchParams(location.search).get("previous");
             document.title = document.title + " " + new URLSearchParams(location.search).get("previous");
         </script>
+        <script src="https://www.google.com/recaptcha/enterprise.js?render=6Le2F_kjAAAAAFwlgd29Y-zpV3YkY-nbxdHZJ_Bl"></script>
+        <script>
+        grecaptcha.enterprise.ready(function() {
+            grecaptcha.enterprise.execute('6Le2F_kjAAAAAFwlgd29Y-zpV3YkY-nbxdHZJ_Bl', {action: 'login'}).then(function(token) {
+            //    ...
+            });
+        });
+        </script>
     </div>
 </body>
 </html>

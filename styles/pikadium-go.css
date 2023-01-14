@@ -1,5 +1,7 @@
 @font-face {
     font-family: "pikadium-go";
+    font-weight: normal;
+    font-style: normal;
     src: url("../fonts/pikadium-go/pikadium-go.woff2"),
          url("../fonts/pikadium-go/pikadium-go.svg");
 }
