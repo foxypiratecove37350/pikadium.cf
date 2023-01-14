@@ -8,6 +8,11 @@
     scroll-behavior: smooth;
 }
 
+::selection {
+    background: #7c0873bd;
+    color: #f1f1f1;
+}
+
 u-i-b {
     text-decoration: underline;
     font-style: italic;
